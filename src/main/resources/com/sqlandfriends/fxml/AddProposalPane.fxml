@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddProposal" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1030.0" style="-fx-background-color: white;" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sqlandfriends.AddProposalController">
+   <children>
+      <AnchorPane fx:id="title" layoutX="325.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="381.0" style="-fx-background-color: rgb(168, 4, 4);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="25.0" layoutY="19.0" prefHeight="69.0" prefWidth="948.0" text="Add Proposal" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="19.0">
+               <font>
+                  <Font size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="93.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="844.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="93.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="134.0">
+         <children>
+            <Button fx:id="addProposalButton" alignment="CENTER" contentDisplay="CENTER" layoutX="462.0" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#openFileChooser" prefHeight="35.0" prefWidth="28.0" styleClass="button-normal" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="107.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/outline_upload_file_white_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="titleField" layoutX="113.0" layoutY="27.0" prefHeight="34.0" prefWidth="250.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="25.0" prefHeight="37.0" prefWidth="99.0" text="Title:">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="filePathField" editable="false" layoutX="113.0" layoutY="107.0" prefHeight="34.0" prefWidth="334.0" promptText="File Path">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="105.0" prefHeight="37.0" prefWidth="99.0" text="File Path:">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <StackPane fx:id="pdfHolder" layoutX="38.0" layoutY="164.0" prefHeight="357.0" prefWidth="498.0" visible="false" />
+            <Button fx:id="submitPropsalButton" alignment="CENTER" contentDisplay="CENTER" layoutX="648.0" layoutY="458.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="25.0" prefWidth="171.0" styleClass="button-normal" text="Submit Proposal" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

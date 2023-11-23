@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="1279.0" style="-fx-background-color: white;" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sqlandfriends.UserHomeScreenController">
+   <left>
+      <VBox fx:id="sidePanel" prefHeight="728.0" prefWidth="249.0" style="-fx-background-color: maroon;" styleClass="sidePanel" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/osa.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="proposalButton" onMouseClicked="#toggleProposalPane" prefHeight="54.0" prefWidth="249.0" styleClass="sidePanelButton">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/outline_article_white_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="10.0" prefHeight="35.0" prefWidth="158.0" text="Proposal" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="approvedButton" onMouseClicked="#toggleApprovedPane" prefHeight="54.0" prefWidth="239.0" styleClass="sidePanelButton">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/outline_thumb_up_white_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="10.0" prefHeight="35.0" prefWidth="158.0" text="Approved" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="rejectedButton" onMouseClicked="#toggleRejectedPane" prefHeight="54.0" prefWidth="251.0" styleClass="sidePanelButton">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/outline_thumb_down_alt_white_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="10.0" prefHeight="35.0" prefWidth="158.0" text="Rejected" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="usersButton1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1000.0" prefWidth="251.0">
+               <children>
+                  <Label fx:id="nameLabel" layoutX="14.0" layoutY="239.0" prefHeight="35.0" prefWidth="229.0" text="Denrei" textFill="WHITE" AnchorPane.bottomAnchor="151.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="positionOrganizationLabel" layoutX="14.0" layoutY="309.0" prefHeight="35.0" prefWidth="222.0" text="President" textFill="WHITE" AnchorPane.bottomAnchor="81.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departmentLabel" layoutX="15.0" layoutY="274.0" prefHeight="35.0" prefWidth="112.0" text="CCE" textFill="WHITE" AnchorPane.bottomAnchor="116.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="14.0" layoutY="344.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#logOut" prefHeight="44.0" prefWidth="217.0" styleClass="sidePanelButton" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="2.0">
+                           <image>
+                              <Image url="@../img/outline_people_white_24dp.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="68.0" layoutY="5.0" prefHeight="35.0" prefWidth="140.0" text="Logout" textFill="WHITE" AnchorPane.bottomAnchor="4.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

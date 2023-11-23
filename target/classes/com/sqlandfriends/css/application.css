@@ -1,0 +1,83 @@
+
+
+.root {
+	-fx-background-color: dark-maroon;
+	
+	dark-maroon: #800000;
+	maroonish: #AE0000;
+	light-maroon: #DC0000;
+	
+
+}
+.button-normal {
+	-fx-background-radius: 10px;
+	
+	-fx-border-width: 2px;
+	-fx-border-radius: 5px;
+	-fx-background-color: dark-maroon;
+}
+.button-normal:hover {
+	-fx-background-color: light-maroon;
+}
+.button-normal:active {
+	-fx-background-color: black;
+}
+.navbar {
+	-fx-background-color: dark-maroon;
+}
+.dash {
+	-fx-background-color: white;
+}
+.sidePanel {
+	-fx-background-color: rgb(54, 56, 56);
+	
+}
+.sidePanelButton:hover{
+	-fx-background-color: rgb(199, 2, 2);
+}
+.image-button {
+	-fx-scale-y: 1;
+	-fx-scale-x: 1;
+}
+.image-button:hover{
+	-fx-scale-y: 1.1;
+	-fx-scale-x: 1.1;
+    
+}
+#sidePanelMenuButton {
+	-fx-background-color: black;
+}
+.proposalCards-scrollPane {
+	-fx-background-color:white;
+	-fx-border: none;
+}
+.proposalCards{
+	-fx-background-radius: 10px;
+	-fx-border-color: rgba(156, 153, 153, 1);
+	-fx-border-radius:10px;
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,.8), 3, 0, 3, 2);
+	-fx-background-color: white;
+	-fx-border-width:1px;
+}
+.proposalCards:hover{
+	-fx-background-color: gray;
+}
+.options{
+	-fx-scale-x: 1;
+	-fx-scale-y: 1;
+}
+.options:hover{
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+	border-color: rgb(35, 109, 221);
+}
+
+.radioButton .radio {
+	-fx-border-color: red;
+    -fx-border-radius: 50%;
+    -fx-border-width: 2px;
+}
+.pdf-viewer-toolbar button {
+    -fx-background-color: white;
+    -fx-text-fill: white;
+}

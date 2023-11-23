@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userCard" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#clicked" prefHeight="112.0" prefWidth="1026.0" styleClass="proposalCards" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sqlandfriends.UsersCardController">
+   <children>
+      <Label fx:id="userName" layoutX="14.0" layoutY="14.0" prefHeight="55.0" prefWidth="450.0" text="Denrei Keith De Jesus" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailAddress" layoutX="15.0" layoutY="67.0" prefHeight="43.0" prefWidth="625.0" text="d.dejesus.54321@umindanao.edu.ph" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="department" alignment="CENTER_RIGHT" layoutX="631.0" layoutY="14.0" prefHeight="43.0" prefWidth="320.0" text="CCE" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="yearLevel" alignment="CENTER_RIGHT" layoutX="692.0" layoutY="67.0" prefHeight="43.0" prefWidth="320.0" text="4th" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
